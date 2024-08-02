@@ -609,7 +609,6 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: #000;
     opacity: .7;
     top: 0;
     left: 0;
@@ -667,7 +666,7 @@
   #int-hero {
     min-height: 18.75em;
     height: auto;
-    padding-top: 11.25em;
+    padding-top: 14.25em;
     -webkit-padding-after: 6.25em;
             padding-block-end: 6.25em;
     background-attachment: fixed;
