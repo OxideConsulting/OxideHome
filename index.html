@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="https://www.oxideconsulting.com">
+
+    <meta name="description" content="At Oxide Consulting, we specialize in providing technology consulting services. Serving businesses in South Central Pennsylvania, we are committed to delivering reliable and flexible solutions to enhance your business operations.">
+    <meta name="keywords" content="Oxide Consulting, PA, Pennsylvania, Technology Consulting">
+
+    <!-- Social Media Display -->
+    <meta property="og:title" content="Oxide Consulting | PA Technology Consultants"/>
+    <meta property="og:description" content="At Oxide Consulting, we specialize in providing technology consulting services. Serving businesses in South Central Pennsylvania, we are committed to delivering reliable and flexible solutions to enhance your business operations."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.oxideconsulting.com"/>
+    <meta property="og:image" content="https://www.oxideconsulting.com/SharingPrev.png"/>
+    <meta property="og:image:secure_url" content="https://www.oxideconsulting.com/SharingPrev.png"/>
+    <meta property="og:image:alt" content="Oxide Consulting Logo"/>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/images/wave.svg">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/critical.css"> <!-- Only above the fold css-->
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <!-- Defer loading the whole page css -->
+    <link rel="stylesheet" href="/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+
+    <!-- If client javascript is disabled, load this stylesheet -->
+    <noscript>
+        <link rel="stylesheet" href="/css/local.css">
+    </noscript>
+
+    <title>Oxide Consulting | PA Technology Consultants</title>
+</head>
+<body>
+<!-- Screen reader skip main nav -->
+<a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+<!-- Navigation -->
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="/index.html" class="cs-logo" aria-label="back to home">
+            <img src="/images/OxideLogo710.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how many there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="/index.html" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/about.html" class="cs-li-link">
+                            About Us
+                        </a>
+                    </li>
+                    <!-- Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work -->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/services.html" class="cs-li-link cs-drop-link">Service 1</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/services.html" class="cs-li-link cs-drop-link">Service 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/projects.html" class="cs-li-link">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/contact.html" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <button id="dark-mode-toggle">
+                    <!-- Moon is an inline SVG -->
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                    <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15" height="15">
+                </button>
+            </div>
+        </nav>
+
+        <div class="cs-contact-group">
+            <a href="tel:7178181625" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="phone icon" width="24" height="24" aria-hidden="true" decoding="async">
+                717-818-1625
+            </a>
+            <div class="cs-social">
+                <a href="https://facebook.com" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="Facebook" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://twitter.com" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="Twitter" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main id="main">
+    <!-- LANDING -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="heroText">
+                <h1 id="home-h">Attention to Detail, Commitment to You.</h1>
+                <p>
+                    Websites and professional services designed around your unique ideas. Starting at $150/mo.
+                </p>
+                <a class="button-solid" href="/contact.html" target="_blank" rel="noopener">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+        <div class="hero-background light-mode-background"><picture><img aria-hidden="true" decoding="async" src="/images/wave.svg"></img></picture></div>
+        <div class="hero-background dark-mode-background"><picture><img aria-hidden="true" decoding="async" src="/images/wavesDark.svg"></img></picture></div>
+    </section>
+<section id="intro">
+    <div class="intro-content">
+        <div class="introText">
+            <h1 id="intro-h">Who we are</h1>
+            <p>
+                At Oxide, the customer experience is first. <br>
+                Our mission is to elevate small organizations with big ideas, creating custom solutions that resonate with their customers.
+                We go the extra mile to ensure our clients are ecstatic with the results, providing innovative and impactful technology tailored to their unique needs.
+            </p>
+        </div>
+        <picture class="introImage"><img aria-hidden="true" decoding="async" src="/images/mainhandshake.webp"></img></picture>
+    </div>
+</section>
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="card">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="/images/devices.svg" alt="park bench" width="64" height="64">
+            </picture>
+            <h2>Attractive Anywhere.</h2>
+            <p>
+                Our solutions are designed to look great and function seamlessly no matter how your customer finds you.
+            </p>
+        </div>
+        <div class="card">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="/images/rating.svg" alt="carpentry" width="48" height="48">
+            </picture>
+            <h2>Uniquely Yours, Digitally Perfect.</h2>
+            <p>
+                Your business is one of a kind. We take the time to fully understand it and make sure everyone knows what sets you apart.
+            </p>
+        </div>
+        <div class="card">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="/images/cooperation.svg" alt="excavator" width="48" height="48">
+            </picture>
+            <h2>End-to-End Excellence</h2>
+            <p>
+                We don't rest. With our 24/7 support and monitoring, you can. Leave the technology to us, and focus on what matters- your business.
+            </p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="sidebyside" class="sidebyside">
+        <div class="container">
+            <div class="content">
+                <h2 class="title">At Oxide, cookie-cutter just won't cut it.</h2>
+                <p>
+                    As professional Software Developers, we've learned more than just how to cobble together templates with your logo on it.
+                    We understand the core of your website because we build it from the ground up.
+                </p>
+                <p>
+                    <strong>While making cookies isn't our forte, here's what we excel at:</strong>
+                </p>
+                <ul>
+                    <li>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                        <span>Website Design and Development</span>
+                    </li>
+                    <li>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                        <span>Website Hosting and Management</span>
+                    </li>
+                    <li>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                        <span>Custom Software Solutions</span>
+                    </li>
+                    <li>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                        <span>Branding and Asset Creation</span>
+                    </li>
+                    <li>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                        <span>Technical Support</span>
+                    </li>
+                </ul>
+                <p>
+                    It means having one dedicated team that comprehensively understands both your business and its technological needs, tailored just for you.
+                </p>
+                <a class="button-solid" href="/about.html">More About Us</a>
+            </div>
+            <picture class="image-box">
+                <source media="(max-width: 600px)" srcset="/images/whiteboarding.webp">
+                <source media="(min-width: 601px)" srcset="/images/whiteboarding.webp">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/images/" alt="excavator" width="400" height="662">
+            </picture>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Why Choose Us                -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1662">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">So what's unique about us?</span>
+                <h2 class="cs-title">Custom solutions make a real difference.</h2>
+            </div>
+            <div class="cs-wrapper">
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <span class="cs-item-number">01</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Faster Load Times
+                            </h3>
+                            <p class="cs-item-text">
+                                Websites written from scratch load up to 10 times faster than those built with page builders like WordPress. Slower load times mean more visitors leave your site, reducing conversions.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">02</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Superior Mobile Performance
+                            </h3>
+                            <p class="cs-item-text">
+                                Google indexes your site based on its mobile performance, and page builder mobile sites often fall short.
+                                Our mobile-first designs ensure your site is fully optimized, fast, and 100% responsive, improving your search rankings and user experience.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">03</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Enhanced Security
+                            </h3>
+                            <p class="cs-item-text">
+                                WordPress sites are notorious for vulnerabilities and require a site maintainer to apply constant updates to patch security flaws.
+                                Our hand-made static sites are significantly more robust, offering peace of mind with fewer entry points for hackers.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <span class="cs-item-number">04</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Tailored User Experience
+                            </h3>
+                            <p class="cs-item-text">
+                                Custom solutions allow for a tailored user experience that precisely fits your business needs. Unlike generic templates, every element is designed with your unique audience in mind, resulting in a more engaging and effective website.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">05</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Search Engine Optimization
+                            </h3>
+                            <p class="cs-item-text">
+                                Custom-built sites are significantly more accessible to search engines like Google. With clean, efficient code and faster load times, your site will rank higher on search engines, allowing your customers to find you over the competition.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">06</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Scalability and Flexibility
+                            </h3>
+                            <p class="cs-item-text">
+                                As your business grows, your online presence needs to adapt. Custom solutions provide the scalability and flexibility required to add new features and functionality without the constraints of pre-built themes or plugins.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!---SVG Graphic-->
+            <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/diagnol-ovals.svg" alt="graphic" loading="lazy" decoding="async" height="710" aria-hidden="true" width="690">
+        </div>
+    </section>
+
+
+    <!-- Final Call to Action -->
+    <section id="cta">
+        <div class="container">
+            <h2 class="title">Transform Your Business Today</h2>
+            <p>
+                Partner with Oxide Consulting to bring your technology visions to life. Our expert team in South Central Pennsylvania is ready to provide top-notch consulting, development, and more. Get started now and see the difference!
+            </p>
+            <a href="/contact.html" class="button-solid">Get a Free Consultation Now</a>
+        </div>
+<!--        <picture>-->
+<!--            <source media="(max-width: 600px)" srcset="/images/drivewayfinished1-m.webp">-->
+<!--            <source media="(min-width: 601px)" srcset="/images/drivewayfinished1.jpg">-->
+<!--            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/" alt="driveway" width="1920" height="1280">-->
+<!--        </picture>-->
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="/images/NewOxideLogo.svg" alt="logo" width="264" height="78"></a>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li><h2>Information</h2></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/projects.html">Portfolio</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><h2>Services</h2></li>
+                    <li>Technology Consulting</li>
+                    <li>Website Development</li>
+                    <li>Search Engine Optimization</li>
+                    <li>Custom Software Solutions</li>
+                </ul>
+                <ul>
+                    <li><h2>Contact</h2></li>
+                    <li><a href="/contact.html">950 Walnut Bottom Road <br> Suite 15 #203<br>Carlisle PA 17350</a></li>
+                    <li><a href="tel:717-818-1625">717-818-1625</a></li>
+                    <li><a href="mailto:info@oxideconsulting.com">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span>Website Designed and Developed by</span>
+        <a href="" target="_blank" rel="noopener">Oxide Consulting</a>
+        <br><span class="copyright"> Copyright 2024 </span></div>
+</footer>
+
+<script defer src="/nav.js"></script>
+<script defer src="/dark.js"></script>
+<!--
+    This script adds a class to the body after scrolling 100px
+    and we used these body.scroll styles to create some on scroll
+    animations with the navbar
+-->
+<script defer>
+    document.addEventListener('scroll', (e) => {
+        const scroll = document.documentElement.scrollTop;
+        if(scroll >= 100){
+            document.querySelector('body').classList.add('scroll')
+        } else {
+            document.querySelector('body').classList.remove('scroll')
+        }
+    });
+</script>
+
+</body>
+</html>
