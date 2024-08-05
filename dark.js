@@ -29,14 +29,14 @@ if (darkMode == "enabled") {
 }
 
 // add event listener to the dark mode button toggle
-darkModeToggle.addEventListener('click', () => {
-  // on click, check localstorage for the dark mode value
-  darkMode = localStorage.getItem("darkMode");
-  if (darkMode !== "enabled") {
-    // if dark mode is not enabled, run this function to set it to enabled
-    enableDarkMode();
-  } else {
-    // if dark mode is enabled, run this function to set it to disabled
-    disableDarkMode();
-  }
-})
+// darkModeToggle.addEventListener('click', () => {
+//   // on click, check localstorage for the dark mode value
+//   darkMode = localStorage.getItem("darkMode");
+//   if (darkMode !== "enabled") {
+//     // if dark mode is not enabled, run this function to set it to enabled
+//     enableDarkMode();
+//   } else {
+//     // if dark mode is enabled, run this function to set it to disabled
+//     disableDarkMode();
+//   }
+// })

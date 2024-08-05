@@ -77,6 +77,7 @@
     z-index: -1;
   }
   #sidebyside .image-box img {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     position: absolute;
     top: 0;
@@ -250,7 +251,6 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: #000;
     opacity: .7;
     top: 0;
     left: 0;
@@ -302,7 +302,7 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: 6.25em;
+    margin-top: 0.25em;
   }
   #cta:before {
     display: none;
