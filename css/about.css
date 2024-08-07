@@ -323,7 +323,7 @@
   }
   #why-choose-892 .cs-text {
     font-size: 1.125em;
-    max-width: 46.5rem;
+    max-width: 23.5rem;
   }
   #why-choose-892 .cs-button-solid {
     font-size: 1rem;
@@ -428,6 +428,16 @@
   }
   #why-choose-892 .cs-floater {
     display: block;
+  }
+  #why-choose-892 .cs-text {
+    font-size: 1.125em;
+    max-width: 33.5rem;
+  }
+}
+@media only screen and (min-width: 64em) {
+  #why-choose-892 .cs-text {
+    font-size: 1.125em;
+    max-width: 53.5rem;
   }
 }
 .aboutMainP {

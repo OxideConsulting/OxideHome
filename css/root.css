@@ -639,7 +639,7 @@
     position: relative;
     width: 96%;
     max-width: 7.8125em;
-    margin-top: 1.09375em;
+    margin-top: 4.09375em;
     margin-bottom: 0.46875em;
   }
   #int-hero p {
@@ -659,6 +659,7 @@
   }
   #int-hero h1 {
     font-size: 4em;
+    margin-top: 1.5em;
   }
 }
 /* Small Desktop */
@@ -873,7 +874,7 @@
   }
   #footer .right-section {
     margin: 0;
-    width: 38.0625em;
+    width: 53.0625em;
     max-width: none;
   }
   #footer .right-section .lists {
@@ -1302,7 +1303,7 @@
     box-shadow: inset rgba(149, 157, 165, 0.1) 0px 8px 10px;
     opacity: 0;
     border-bottom: 5px solid var(--primary);
-    border-radius: 0 0 1.5rem 1.5rem;
+    border-radius: 0 0 1.1rem 1.1rem;
     visibility: hidden;
     /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
     position: absolute;
@@ -1599,5 +1600,116 @@
 @media only screen and (min-width: 81.25rem) {
   #cs-navigation .cs-social {
     display: flex;
+  }
+}
+
+/* Mobile Privacy Policy*/
+@media only screen and (min-width: 0em) {
+  #docview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    min-height: 30vh;
+    padding-top: 3.125em;
+  }
+  #docview:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #docview picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #docview picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 67%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  #docview h1 {
+    color: #000;
+    font-size: 2.13333333em;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    width: 96%;
+    max-width: 7.8125em;
+    margin-top: 4.09375em;
+    margin-bottom: 0.46875em;
+  }
+  #docview p {
+    color: #000;
+    text-align: center;
+    max-width: 40.22222222rem;
+    margin: auto;
+    margin-bottom: 1.66666667em;
+    display: block;
+    width: 96%;
+  }
+  #docview ul {
+    color: #000;
+    text-align: left;
+    max-width: 40.22222222rem;
+    margin: auto;
+    margin-bottom: 1.66666667em;
+    display: block;
+    width: 50%;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #docview {
+    font-size: 16px;
+  }
+  #docview h1 {
+    font-size: 4em;
+    margin-top: 1.5em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #docview {
+    min-height: 18.75em;
+    height: auto;
+    padding-top: 14.25em;
+    -webkit-padding-after: 6.25em;
+    padding-block-end: 6.25em;
+    background-attachment: fixed;
+    font-size: inherit;
+  }
+  #docview picture img {
+    position: absolute;
+    top: -22em;
+    left: 0;
+    height: 165%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
