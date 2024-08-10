@@ -741,7 +741,7 @@
         margin: auto;
     }
     #footer .right-section .lists ul {
-        padding: 0;
+        padding: 20px;
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -795,7 +795,7 @@
         display: block;
         height: 0.11111111em;
         width: 5.38888889em;
-        background: #EEBE76;
+        background: #006fff;
         opacity: 1;
         bottom: -0.88888889em;
         left: 0;
@@ -1832,7 +1832,7 @@
         position: absolute;
         top: 0em;
         left: 0;
-        height: 100%;
+        height: 114%;
         width: 100%;
         -o-object-fit: cover;
         object-fit: cover;
@@ -1881,6 +1881,7 @@
     .svcsSection .introText {
         width: 100%;
         margin: auto;
+        margin-left: 2em;
         max-width: 56.875em;
         text-align: center;
     }

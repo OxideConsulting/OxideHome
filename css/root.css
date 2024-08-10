@@ -741,7 +741,7 @@
     margin: auto;
   }
   #footer .right-section .lists ul {
-    padding: 0;
+    padding: 20px;
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -795,7 +795,7 @@
     display: block;
     height: 0.11111111em;
     width: 5.38888889em;
-    background: #EEBE76;
+    background: #006fff;
     opacity: 1;
     bottom: -0.88888889em;
     left: 0;
