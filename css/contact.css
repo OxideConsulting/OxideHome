@@ -95,7 +95,7 @@
   }
   #form .contact-right {
     background: #1a1a1a;
-    padding: 2.8125em 2.125em;
+    padding: 1.8125em 1.125em;
     width: 100%;
     max-width: 18.75em;
     margin: auto;
@@ -255,7 +255,7 @@
             flex-direction: column;
     max-width: 18.75em;
     margin: 0;
-    height: 34.625em;
+    height: 39.625em;
   }
   #form .contact-right .info-group {
     margin-left: 0;
