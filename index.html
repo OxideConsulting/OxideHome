@@ -161,7 +161,11 @@
                 We go the extra mile to ensure our clients are ecstatic with the results, providing innovative and impactful technology tailored to their unique needs.
             </p>
         </div>
-        <picture class="introImage"><img aria-hidden="true" decoding="async" src="/images/mainhandshake.webp"></img></picture>
+        <picture class="introImage">
+        <source media="(max-width: 600px)" srcset="/images/mainhandshakeSmall.webp">
+        <source media="(min-width: 601px)" srcset="/images/mainhandshake.webp">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/mainhandshake.webp" alt="Handshake" width="400" height="662">
+        </picture>
     </div>
 </section>
     <!-- Services -->
