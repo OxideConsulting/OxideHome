@@ -4,6 +4,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
+    scroll-padding-top: 100px;
     --primary: rgba(0, 102, 255, 0.92);
     --primaryShade: #fba94e;
     --primaryDark: rgba(0, 102, 255, 0.92);
