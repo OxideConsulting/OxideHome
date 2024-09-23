@@ -3,6 +3,10 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
+    .titanyteHeaderLogo {
+        width: auto;
+        height: 2em;
+    }
     :root {
         --primary: rgba(0, 102, 255, 0.92);
         --primaryShade: #fba94e;
@@ -374,6 +378,10 @@
 }
 /* Desktop */
 @media only screen and (min-width: 64em) {
+    .titanyteHeaderLogo {
+        width: auto;
+        height: 4em;
+    }
     ::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 0.375em rgba(0, 0, 0, 0.3);
         background-color: #ffffff;
@@ -709,7 +717,7 @@
     }
     #footer .left-section .logo img {
         width: auto;
-        height: 100%;
+        height: 58%;
         display: block;
     }
     #footer .left-section p {
@@ -1721,6 +1729,17 @@
         flex-direction: column;
         align-items: left;
     }
+    .svcsSection .ti-intro-content {
+        width: 96%;
+        max-width: 71.5em;
+        margin: auto;
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
     .svcsSection .intro-contentFlip {
         width: 96%;
         max-width: 71.5em;
@@ -1754,7 +1773,9 @@
     }
     .svcsSection .introImageFlip {
         width: 100%;
+        max-width: 25.8em;
         text-align: center;
+        margin-top: 2em;
         margin-bottom: 7em;
     }
     .svcsSection .introImageFlip img {
@@ -1881,7 +1902,7 @@
     .svcsSection .introText {
         width: 100%;
         margin: auto;
-        margin-left: 2em;
+        margin-left: auto;
         max-width: 56.875em;
         text-align: center;
     }
@@ -1896,13 +1917,13 @@
         width: 120%;
         max-width: 33em;
         margin-left: 6em;
-        margin-top: 1em;
+        margin-top: 8em;
         text-align: center;
     }
     .svcsSection .introImage img {
         border-radius: 20px;
         /*box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);*/
-        max-width: 32em;
+        max-width: 34em;
         height: auto;
         padding: 5em;
     }
@@ -1941,21 +1962,32 @@
         margin: auto;
         margin-top: 1.7em;
         margin-bottom: 1.72222222em;
-        width: 100%;
+        width: 83%;
         text-align: center;
-        max-width: 34.27777778em;
+        max-width: 45em;
         opacity: 1;
     }
+}
+.ti-svcs-backer {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 1em;
+    color: white;
+}
+.ti-svcs-text {
+    margin: 1em;
+    color: white;
 }
 /*-- -------------------------- -->
 <---          Pricing           -->
 <--- -------------------------- -*/
 
+.ti-pricing {
+    color: white;
+}
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #pricing-1087 {
         padding: var(--sectionPadding);
-        background-color: #f7f8f8;
         position: relative;
     }
     #pricing-1087 .cs-container {
@@ -2208,8 +2240,15 @@
         bottom: 0;
     }
 }
-.titanyteHeaderLogo {
-    width: auto;
-    height: 4em;
-}
 
+.ti-background {
+    background-image: url('/images/ti-layered-waves.svg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    /* Ensure the background covers the full height */
+    /* If needed, set additional properties */
+}
+.ti-cta {
+    color: white;
+}
