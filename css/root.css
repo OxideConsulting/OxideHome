@@ -70,7 +70,7 @@
   h5,
   h6 {
     margin: 0;
-    color: #1a1a1a;
+    color: #ffffff;
   }
   p,
   li,
@@ -81,7 +81,7 @@
   }
   p,
   li {
-    color: #575757;
+    color: #313131;
   }
   a:hover,
   button:hover {
@@ -112,13 +112,14 @@
     padding: 0 2.14285714em;
     position: relative;
     z-index: 1;
-    background-color: #397eff;
+    background-color: #0023a1;
     color: #fff;
     -webkit-transition: color .3s;
     transition: color .3s;
     -webkit-transition-delay: .1s;
             transition-delay: .1s;
     border-radius: 5px;
+    border: 1.5px solid #6387ff;
   }
   .button-solid:hover {
     color: #fff;
