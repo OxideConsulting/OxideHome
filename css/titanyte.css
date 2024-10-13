@@ -2106,6 +2106,7 @@
         color: var(--headerColor);
     }
     #pricing-1087 .cs-item-p {
+        padding-top: 1em;
         font-size: 1rem;
         line-height: 1.5em;
         text-align: inherit;

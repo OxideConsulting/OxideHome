@@ -134,10 +134,14 @@
     align-items: center;
   }
   #intro .introText {
+    color: #0b0b0b;
     width: 100%;
     margin: auto;
     max-width: 56.875em;
     text-align: center;
+  }
+  .blackTitle {
+    color: #000000
   }
   #intro .introImage {
     width: 100%;
